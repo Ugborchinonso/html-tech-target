@@ -1,0 +1,128 @@
+html{margin: 0%;    background-color: rgb(27, 29, 28);}         body{margin-bottom:0px ;}
+*{color:white;} 
+body{ margin: 0px; margin-left: 3.5px;}
+.topmost{
+    width:100%; height:auto;
+    background-image: url("../movies explantion/Movie site ext refs/LMjsCode.png");
+    background-size: contain;
+    /*
+    background: linear-gradient(135deg, rgb(90, 88, 236),  rgb(7, 4, 185), rgb(201, 42, 65))
+*/}
+div.topmost>section{
+    background: linear-gradient(220deg, rgba(57, 40, 190, 0.7), rgba(86, 88, 233, 0.7), rgba(57, 40, 190, 0.7), rgba(86, 88, 233, 0.7)
+    , rgba(57, 40, 190, 0.7));
+    height: inherit;
+}
+h1{margin-top:3px;
+    font-size: 38pt;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+h1::first-letter{
+    color:rgb(146, 17, 35);
+    font-size:46pt;
+}
+span.nearH1{background-color: rgba(57, 40, 190, 0.7);
+    text-align: center;
+    font-size:10pt;
+}
+p.nearH1{
+    font-size:10pt;
+    font-family:cursive;
+}
+div.topmost>section>img{
+    float: right;
+    width:150px; height:150px
+}
+h2, h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900; font-size: 18pt;
+}
+ul.goal-plan>li>b{
+    color: rgb(248, 217, 43);
+}
+ul.goal-plan>li{margin: 4px;}
+ul.goal-plan{
+    padding: 3px 7px;
+    background-color: rgb(46, 46, 46);
+    border-radius: 14px;
+    list-style-position:inside ;
+}
+@media screen and (min-width:920px) {
+    div.goal-plan-cont{
+        display: flex;  flex-flow: row wrap;
+        justify-content: space-around;
+        width: 100%;
+    }
+}
+.ToTop{
+    width: 30px; height:30px;
+    position: fixed;
+    bottom:2px; right:8px;
+    border-radius:50%;
+    background-color: rgb(48, 29, 4);
+    color:rgb(6,6,6);
+    text-align: center;
+    font-size:18pt;
+    font-family: monospace;
+}
+.ToTop a:link, .ToTop a:visited, .ToTop a:hover, .ToTop a:active{
+    text-decoration: none;
+} 
+footer{
+    font-size:10pt; font-weight:lighter;
+    padding: 10px;
+    padding-top: 2px;
+}
+footer.mainF{ 
+    background-color: rgb(6, 6, 129) ;
+    width:100%; height:auto;
+    font-family:monospace;
+}
+footer.mainF h3{font-weight:bolder;
+    text-align:center;
+    margin-bottom: 5px;
+}
+p.nearFooter{
+    font-weight: lighter; font-size:10pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+footer a:link, footer a:visited{
+    font-family: cursive;
+    text-decoration: none;
+}
+footer a:hover{
+    font-family: monospace; color: red;
+}
+footer p.contact{
+    display: flex;   gap: 10px; 
+    flex-flow: row wrap;   justify-content: center;
+}
+@media screen and (max-width:650px){
+    div.body{ margin-left: 3%;  margin-right: 3%;}
+    div.topmost, div.topmost>section{
+             height: auto;    width: 100%;     margin-top: 0%;
+    }
+    div.topmost h1{margin-top:3%;font-size:  1.1rem;}
+    h1::first-letter{ font-size:1.4rem;
+    }
+    span.nearH1{
+        font-size: 0.6rem;;
+    }
+    div.topmost>section>img{display: none;
+        /*float: right;
+        width:15%; height:80px*/
+    }
+    p.nearH1{ font-size: 0.3rem ;}
+    footer.mainF{width: 100vw; 
+        margin-left: 0%;    margin-right: 0%;
+    }
+}
+@media screen and (max-width:370px){
+    div.topmost h1{margin-top:3%;font-size:  0.9rem;}
+    h1::first-letter{ font-size:1.2rem;
+    }
+    span.nearH1{
+        font-size: 0.3rem;;
+    }
+    p.nearH1{ font-size: 0.08rem ;}
+}
